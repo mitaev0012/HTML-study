@@ -41,14 +41,19 @@ h2 {
 
 /* ===== Step 2: justify-content ===== */
 /* ガイドに沿って .jc-center, .jc-between, .jc-evenly を書こう */
-.jc-center { justify-content: space-evenly;}
-.jc-between { justify-content: space-between;}
-.jc-evenly { justify-content: space-evenly;}
-
+.jc-center {
+  justify-content: space-evenly;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.jc-evenly {
+  justify-content: space-evenly;
+}
 
 /* ===== Step 3: align-items: center ===== */
 /* .center-both に justify-content, align-items, height を書こう */
-.center-both{
+.center-both {
   justify-content: center;
   align-items: center;
   height: 200px;
@@ -64,7 +69,7 @@ h2 {
 .item.wide {
   min-width: 200px;
 }
-.nowrap-demo{
+.nowrap-demo {
   /* デフォルト　折り返さない*/
 }
 
@@ -79,10 +84,22 @@ h2 {
 .card-container {
   display: flex;
   gap: 20px;
-}
-.card {
-  background-color: red;
+  background-color: rgb(189, 127, 127);
   padding: 35px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #da0a0a;
+  border-radius: 100px;
+}
+.white {
+  padding: 20px 30px;
+  background-color: white;
+  color: red;
+  border-radius: 4px;
+  text-align: center;
+}
+.blue {
+  padding: 20px 30px;
+  background-color: rgb(89, 89, 126);
+  color: rgb(43, 189, 121);
+  border-radius: 4px;
+  text-align: center;
 }

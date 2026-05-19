@@ -8,8 +8,23 @@
      * { margin: 0; padding: 0; box-sizing: border-box; }
      body に background-color, color, font-family を設定
      img に max-width: 100% を設定（画像がはみ出さないように）
+     
    ============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 100%;
+}
 /* =============================================
    ヘッダー
    =============================================
@@ -28,7 +43,20 @@
      .header-nav a に color と text-decoration: none を指定
      → リンクの色を変えて下線を消す
    ============================================= */
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(96, 88, 134);
+}
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+a {
+  color: white;
+}
 /* =============================================
    Aboutセクション
    =============================================
@@ -39,7 +67,16 @@
      .about h1 に font-size を設定
      .about p に color（薄めの色）を設定
    ============================================= */
-
+.about {
+  text-align: center;
+  padding: 60px;
+}
+.about h1 {
+  font-size: 40px;
+}
+.about p {
+  color: rgb(226, 175, 175);
+}
 /* =============================================
    セクション共通
    =============================================
@@ -49,7 +86,14 @@
      .section に padding を設定
      .section h2 に text-align: center, font-size, margin-bottom を設定
    ============================================= */
-
+.section {
+  padding: 20;
+}
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 /* =============================================
    メンバーセクション
    =============================================
@@ -69,7 +113,27 @@
 
      .member p に margin-top, font-size, color を設定
    ============================================= */
-
+.member-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: 10;
+}
+.member {
+  text-align: center;
+  width: 80px;
+}
+.member img {
+  width: 50px;
+  height: 10;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.member p {
+  margin-top: 200px;
+  font-size: 20px;
+  color: red;
+}
 /* =============================================
    ゲームセクション
    =============================================
