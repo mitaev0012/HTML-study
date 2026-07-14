@@ -153,6 +153,65 @@ a {
    ヒント:
      .section p に text-align: center と color を設定
    ============================================= */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e2afaf;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #605886;
+  border-radius: 4px;
+  background-color: #2b2f54;
+  color: white;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical; /* 縦方向のみサイズ変更可能に */
+}
+
+/* プルダウンの未選択状態の文字色 */
+.form-group select:invalid {
+  color: #888;
+}
+
+/* 送信ボタンのスタイル */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: rgb(96, 88, 134);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #7268a3;
+}
 
 /* =============================================
    フッター
